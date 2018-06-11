@@ -1,4 +1,4 @@
-var mysql = require("mysql2");
+// var mysql = require("mysql2");
 var connection;
 
 // if (process.env.JAWSDB_URL) {
@@ -20,7 +20,7 @@ var connection;
       "dialect": "mysql"
     },
     "production": {
-      "use_env_variable": process.env.JAWSDB_URL,
+      "use_env_variable": "JAWSDB_URL",
       "dialect": "mysql"
     }
   }
