@@ -1,0 +1,48 @@
+
+
+<div class="container">
+
+    <div class="jumbotron bg-transparent">
+        <div class="d-block">
+        
+            <h1 class="display-4 text-white-shadow align-middle">
+                <img src="/assets/img/Pokeball.png" class="img-fluid pokeball-icon alignment" alt="Pokeball"> 
+                Ready to be a POKEMON MASTER?!
+                <img src="/assets/img/Pokeball.png" class="img-fluid pokeball-icon alignment" alt="Pokeball">
+            </h1>
+        
+        </div>
+        <hr class="my-4">
+        <h3 class="text-white">Find a Wild Pokemon!</h3>
+    <form class="create-form">
+        <div class="form-group">
+            <h5 class="text-white" for="poke">Call out a name and pokemon might appear!</h5>
+            <input type="text" id="poke" name="nickname">
+            <button class="btn btn-primary" type="submit">Find Pokemon</button>
+        </div>
+    </form>
+    </div>
+
+    <br>
+
+    <div class="d-flex">
+        <div class="p-4 bg-transparent text-white text-black-shadow col-md-6">
+            <h3 class="text-center">Wild Pokemon</h3>
+            {{#each pokemon}} 
+                {{!-- {{#if appeared}}  --}}
+                    {{#unless caught}}
+                        {{>pokemon/poke-block}} 
+                    {{/unless}}
+                {{!-- {{/if}}  --}}
+            {{/each}}
+        </div>
+        <div class="card p-4 bg-white-transparent text-white text-black-shadow col-md-6">
+            <h3 class="text-center">Caught</h3>
+            {{#each pokemon}} 
+                {{#if caught}} 
+                    {{>pokemon/poke-block}} 
+                {{/if}} 
+            {{/each}}
+        </div>
+    </div>
+</div>
