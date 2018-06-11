@@ -2,7 +2,7 @@
 Call out a name and a pokemon might appear!
 
 This application is a clone of my original repo([Click here](https://github.com/EricNg314/Poke-Catcher-Sequelized)) built as an example of a full stack webpage while utilizing the Sequelize package.
- 
+
 The example:
 * Takes input based on predefined routes.
 * Receive information from forms.
@@ -10,7 +10,7 @@ The example:
 * Insert new rows into the database.
 * Update query information based on conditionals.
 
-[Click here](<INSERT HEROKU LINK>) to check out the deployed site on Heroku!
+[Click here](https://tranquil-sierra-89766.herokuapp.com/) to check out the deployed site on Heroku!
 
 ## Example of App :tv:
 
@@ -51,7 +51,7 @@ This repo utilizes various packages from Node Package Manager(NPM).
     node server.js
     ```
 
-4. Go to your browser and type enter http://localhost:8080/ into your address bar. (Or visit the live demo [here](<INSERT HEROKU LINK>).)
+4. Go to your browser and type enter http://localhost:8080/ into your address bar. (Or visit the live demo [here](https://tranquil-sierra-89766.herokuapp.com/).)
 
     
 ## Built With :hammer:
@@ -64,8 +64,11 @@ This repo utilizes various packages from Node Package Manager(NPM).
 * [Node.js](https://nodejs.org/en/) - An open source server environment.
 * [NPM - express](https://www.npmjs.com/package/express) - A node package for creating a web framework in node.
 * [NPM - body-parser](https://www.npmjs.com/package/body-parser) - A body parsing middleware. Parse incoming request bodies in a middleware before your handlers
-* [NPM - mysql](https://www.npmjs.com/package/mysql) - This is a node.js driver for MySQL. It is written in JavaScript, does not require compiling, and is 100% MIT licensed.
 * [NPM - express-handlebars](https://www.npmjs.com/package/express-handlebars) - Handlebars provides the power necessary to let you build semantic templates effectively with no frustration.
+* [NPM - mysql2](https://www.npmjs.com/package/mysql2) - An updated version of the [MySQL](https://www.npmjs.com/package/mysql) package required for Sequelize package.
+* [NPM - sequelize](https://www.npmjs.com/package/sequelize) - Sequelize is a promise-based Node.js ORM for Postgres, MySQL, SQLite and Microsoft SQL Server. It features solid transaction support, relations, read replication and more.
+
+
 
 
 
@@ -74,3 +77,4 @@ This repo utilizes various packages from Node Package Manager(NPM).
 
 ## Acknowledgments 
 * Original animations prior to modifications are from Animate.css from Daniel Eden. [Click here](https://github.com/daneden/animate.css)
+* Thanks to [PokeAPI](https://pokeapi.co/) for the image repository.
