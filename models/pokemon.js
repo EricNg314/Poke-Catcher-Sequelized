@@ -1,21 +1,28 @@
-var orm = require("../config/orm.js");
+module.exports = function(sequelize, DataTypes){
+    var Pokemon = sequelize.define("pokemon", {
+        pokemon_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        pokemon_name: {
+            type: DataTypes.STRING(255)
+        },
+        pokemon_nickName: {
+            type: DataTypes.STRING(255)
+        },
+        pokemon_front_sprite_url: {
+            type: DataTypes.STRING(255),
+            allowNull: false
+        },
+        appeared: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
+        },
+        caught: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
+        }
+    });
 
-var poke = {
-    selectAll: function (cb) {
-        orm.selectAll("pokemon", function (res) {
-            cb(res);
-        });
-    },
-    insertOne: function (cols, vals, cb) {
-        orm.insertOne("pokemon", cols, vals, function (res) {
-            cb(res);
-        });
-    },
-    updateOne: function (objColVals, condition, cb) {
-        orm.updateOne("pokemon", objColVals, condition, function (res) {
-            cb(res);
-        });
-    }
-};
-
-module.exports = poke;
+    return Pokemon;
+}
