@@ -1,7 +1,7 @@
 # Pokemon-Catcher-Sequelized :globe_with_meridians:
 Call out a name and a pokemon might appear!
 
-This application is a clone of my original repo([Click here](https://github.com/EricNg314/Poke-Catcher-Sequelized)) built as an example of a full stack webpage while utilizing the Sequelize package.
+This application is a clone of my original repo ([click here](https://github.com/EricNg314/Pokemon-Catcher)), built as an example of a full stack webpage while utilizing the Sequelize package.
 
 The example:
 * Takes input based on predefined routes.
