@@ -1,9 +1,9 @@
 var mysql = require("mysql2");
 var connection;
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
   connection = {
     "development": {
       "username": process.env.MYSQL_USER,
@@ -20,14 +20,11 @@ if (process.env.JAWSDB_URL) {
       "dialect": "mysql"
     },
     "production": {
-      "username": "root",
-      "password": null,
-      "database": "database_production",
-      "host": "127.0.0.1",
+      "use_env_variable": process.env.JAWSDB_URL,
       "dialect": "mysql"
     }
   }
-}
+// }
 
 
 module.exports = connection;
