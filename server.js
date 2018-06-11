@@ -17,9 +17,8 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine","handlebars");
 
-var routes = require("./controllers/pokemon_controller.js");
+require("./controllers/pokemon_controller.js")(app);
 
-app.use(routes);
 
 db.sequelize.sync({}).then(function(){
     app.listen(PORT, function(){
